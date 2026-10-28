@@ -23,7 +23,7 @@ jobs:
           node-version: 22
           cache: pnpm
           registry-url: https://npm.pkg.github.com
-          scope: '@alobacsi'
+          scope: '@squallttthp'
       - run: pnpm install --frozen-lockfile=false
       - run: pnpm check
       - run: pnpm --filter @alobacsi/design-tokens pack --pack-destination /tmp/package

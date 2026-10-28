@@ -1,11 +1,11 @@
 {
-  "name": "@alobacsi/design-system",
+  "name": "@squallttthp/design-system",
   "private": true,
   "version": "0.1.0",
   "description": "Shared AloBacsi design tokens, CSS runtime and component specifications",
   "packageManager": "pnpm@10.0.0",
   "scripts": {
-    "build": "pnpm --filter @alobacsi/design-tokens build",
-    "check": "pnpm --filter @alobacsi/design-tokens check"
+    "build": "pnpm --filter @squallttthp/design-tokens build",
+    "check": "pnpm --filter @squallttthp/design-tokens check"
   }
 }

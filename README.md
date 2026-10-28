@@ -4,7 +4,7 @@ Nguồn dùng chung cho nhận diện, design tokens, CSS runtime và đặc t�
 
 ## Packages
 
-- `@alobacsi/design-tokens`: CSS/JSON tokens dùng được với Go templates, Symfony, Next.js và các web app khác.
+- `@squallttthp/design-tokens`: CSS/JSON tokens dùng được với Go templates, Symfony, Next.js và các web app khác.
 - `@alobacsi/ui-web`: chưa phát hành; chỉ tạo sau khi token và component spec ổn định.
 
 ## Source of truth
@@ -17,12 +17,12 @@ Nguồn dùng chung cho nhận diện, design tokens, CSS runtime và đặc t�
 pnpm install
 pnpm build
 pnpm check
-pnpm pack --filter @alobacsi/design-tokens
+pnpm pack --filter @squallttthp/design-tokens
 ```
 
 ## Consumers
 
-- Next.js: cài `@alobacsi/design-tokens`, import `@alobacsi/design-tokens/tokens.css`.
+  - Next.js: cài `@squallttthp/design-tokens`, import `@squallttthp/design-tokens/tokens.css`.
 - Go/Symfony/templates: copy artifact CSS từ package vào public assets trong bước build.
 - Product-specific tokens nên alias từ `--ac-*`, không hard-code lại màu thương hiệu.
 
