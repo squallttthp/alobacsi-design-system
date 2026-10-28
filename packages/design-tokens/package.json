@@ -1,0 +1,24 @@
+{
+  "name": "@alobacsi/design-tokens",
+  "version": "0.1.0",
+  "description": "AloBacsi shared design tokens and CSS variables",
+  "license": "UNLICENSED",
+  "files": [
+    "dist",
+    "src/design-tokens.json",
+    "README.md"
+  ],
+  "exports": {
+    ".": "./src/design-tokens.json",
+    "./tokens.css": "./dist/tokens.css",
+    "./tokens.json": "./src/design-tokens.json",
+    "./package.json": "./package.json"
+  },
+  "scripts": {
+    "build": "node ./scripts/build.mjs",
+    "check": "node ./scripts/check.mjs"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  }
+}

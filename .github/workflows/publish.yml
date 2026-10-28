@@ -1,0 +1,32 @@
+name: Publish design tokens
+
+on:
+  push:
+    tags:
+      - "design-tokens-v*"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  packages: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 10
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: pnpm
+          registry-url: https://npm.pkg.github.com
+          scope: '@alobacsi'
+      - run: pnpm install --frozen-lockfile=false
+      - run: pnpm check
+      - run: pnpm --filter @alobacsi/design-tokens pack --pack-destination /tmp/package
+      - run: pnpm --filter @alobacsi/design-tokens publish --no-git-checks
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}

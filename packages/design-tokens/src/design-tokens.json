@@ -1,0 +1,79 @@
+{
+  "name": "AloCare Design System",
+  "version": "0.1.0",
+  "primitive": {
+    "color": {
+      "green-600": "#4E8B59",
+      "green-050": "#E6F3E8",
+      "blue-700": "#405A94",
+      "blue-500": "#5288DA",
+      "blue-400": "#49ABE7",
+      "green-400": "#ABC352",
+      "orange-700": "#C2410C",
+      "orange-100": "#FFEDD5",
+      "yellow-400": "#FFD74A",
+      "yellow-600": "#E0B006",
+      "red-600": "#DC3545",
+      "gray-900": "#000000",
+      "gray-700": "#505050",
+      "gray-500": "#777777",
+      "gray-300": "#DEDEDE",
+      "gray-100": "#F1F1F1",
+      "gray-050": "#F8F8F8",
+      "white": "#FFFFFF"
+    },
+    "font": {
+      "sans": "Open Sans, Arial, sans-serif"
+    },
+    "space": {
+      "1": "4px",
+      "2": "8px",
+      "3": "12px",
+      "4": "16px",
+      "5": "20px",
+      "6": "24px",
+      "8": "32px",
+      "10": "40px",
+      "12": "48px",
+      "16": "64px"
+    },
+    "radius": {
+      "sm": "4px",
+      "md": "8px",
+      "lg": "12px",
+      "pill": "999px"
+    }
+  },
+  "semantic": {
+    "color": {
+      "brand": "{primitive.color.green-600}",
+      "brand-soft": "{primitive.color.green-050}",
+      "text-primary": "{primitive.color.gray-900}",
+      "text-secondary": "{primitive.color.gray-700}",
+      "text-muted": "{primitive.color.gray-500}",
+      "surface": "{primitive.color.white}",
+      "surface-muted": "{primitive.color.gray-050}",
+      "border": "{primitive.color.gray-300}",
+      "link": "{primitive.color.green-600}",
+      "commercial": "{primitive.color.orange-700}",
+      "commercial-soft": "{primitive.color.orange-100}",
+      "success": "{primitive.color.green-600}",
+      "warning": "{primitive.color.yellow-600}",
+      "danger": "{primitive.color.red-600}",
+      "info": "{primitive.color.blue-500}"
+    },
+    "content": {
+      "article-max-width": "771px",
+      "container-max-width": "1350px"
+    }
+  },
+  "component": {
+    "button-primary-bg": "{semantic.color.brand}",
+    "button-primary-hover-bg": "{primitive.color.blue-700}",
+    "button-primary-text": "{primitive.color.white}",
+    "card-bg": "{semantic.color.surface}",
+    "card-border": "{semantic.color.border}",
+    "focus-ring": "{semantic.color.info}",
+    "focus-ring-soft": "rgba(82, 136, 218, 0.28)"
+  }
+}
